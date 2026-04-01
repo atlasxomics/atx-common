@@ -4,11 +4,11 @@ Shared utilities for AtlasXomics Latch workflows.
 
 ## Installation
 
-In a workflow Dockerfile:
+In a workflow Dockerfile (uses a GitHub tarball URL — no `git` binary required):
 
 ```dockerfile
 # pin to a release tag so workflows stay stable
-run pip install git+https://github.com/atlasxomics/atx-common.git@v0.1.0
+RUN pip install https://github.com/atlasxomics/atx-common/archive/refs/tags/v0.1.0.tar.gz
 ```
 
 For local development:
